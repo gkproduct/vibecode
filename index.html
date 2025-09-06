@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somali Messenger - Waa Halka Aad Ku Hadasho!</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Sans+MS:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="header">
+                <h1 class="logo">🇸🇴 Somali Chat</h1>
+                <button class="menu-btn">☰</button>
+            </div>
+            
+            <div class="search-box">
+                <input type="text" placeholder="Raadi qof..." class="search-input">
+                <button class="search-btn">🔍</button>
+            </div>
+            
+            <div class="contacts-list">
+                <div class="contact active">
+                    <div class="avatar">👨</div>
+                    <div class="contact-info">
+                        <div class="name">Aadan Maxamed</div>
+                        <div class="last-message">Waa maxay?</div>
+                    </div>
+                    <div class="time">12:34</div>
+                </div>
+                
+                <div class="contact">
+                    <div class="avatar">👩</div>
+                    <div class="contact-info">
+                        <div class="name">Fadumo Cali</div>
+                        <div class="last-message">Haa, waan fahmay</div>
+                    </div>
+                    <div class="time">11:22</div>
+                </div>
+                
+                <div class="contact">
+                    <div class="avatar">👨‍💼</div>
+                    <div class="contact-info">
+                        <div class="name">Xasan Cabdi</div>
+                        <div class="last-message">Maanta waa maalin fiican</div>
+                    </div>
+                    <div class="time">10:15</div>
+                </div>
+                
+                <div class="contact">
+                    <div class="avatar">👩‍🎓</div>
+                    <div class="contact-info">
+                        <div class="name">Sahra Axmed</div>
+                        <div class="last-message">Waxaan rabaa inaan...</div>
+                    </div>
+                    <div class="time">09:45</div>
+                </div>
+                
+                <div class="contact">
+                    <div class="avatar">👴</div>
+                    <div class="contact-info">
+                        <div class="name">Cabdiraxmaan Yuusuf</div>
+                        <div class="last-message">Subax wanaagsan!</div>
+                    </div>
+                    <div class="time">08:30</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Chat Area -->
+        <div class="main-chat">
+            <div class="chat-header">
+                <div class="chat-user-info">
+                    <div class="avatar">👨</div>
+                    <div class="user-details">
+                        <div class="user-name">Aadan Maxamed</div>
+                        <div class="user-status">Online</div>
+                    </div>
+                </div>
+                <div class="chat-actions">
+                    <button class="action-btn">📞</button>
+                    <button class="action-btn">📹</button>
+                    <button class="action-btn">⋮</button>
+                </div>
+            </div>
+            
+            <div class="messages-container" id="messagesContainer">
+                <div class="message received">
+                    <div class="message-content">
+                        <div class="message-text">Subax wanaagsan! Sidee tahay?</div>
+                        <div class="message-time">12:30</div>
+                    </div>
+                </div>
+                
+                <div class="message sent">
+                    <div class="message-content">
+                        <div class="message-text">Waan fiicanahay, mahadsanid! Adiguna sidee tahay?</div>
+                        <div class="message-time">12:32</div>
+                    </div>
+                </div>
+                
+                <div class="message received">
+                    <div class="message-content">
+                        <div class="message-text">Waan fiicanahay, mahadsanid! Waxaan rabaa inaan ku sheego...</div>
+                        <div class="message-time">12:34</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="message-input-container">
+                <div class="message-input-wrapper">
+                    <button class="attach-btn">📎</button>
+                    <input type="text" placeholder="Qor fariin..." class="message-input" id="messageInput">
+                    <button class="emoji-btn">😀</button>
+                    <button class="send-btn" id="sendBtn">➤</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Terrible Popup -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <h2>🚨 Digniin!</h2>
+            <p>Fariintaada waa la diiwaan galiyay!</p>
+            <button class="popup-btn" onclick="closePopup()">Haa</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
