@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+html { scroll-behavior: smooth; }
+
+/* Typography tweaks */
+@layer base {
+  body {
+    @apply bg-brand-bg text-brand-text font-sans;
+  }
+  h1 { @apply text-4xl md:text-5xl font-semibold tracking-tight; }
+  h2 { @apply text-3xl md:text-4xl font-semibold tracking-tight; }
+  h3 { @apply text-2xl md:text-3xl font-semibold; }
+  p { @apply text-base text-brand-muted; }
+}
+
+@layer components {
+  .container-page { @apply max-w-content mx-auto px-4 md:px-6; }
+  .btn-primary { @apply inline-flex items-center justify-center rounded-lg bg-brand-accent text-white px-5 py-3 font-medium transition-colors hover:bg-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent/30 shadow-soft; }
+  .btn-secondary { @apply inline-flex items-center justify-center rounded-lg bg-brand-surface text-brand-text border border-neutral-200 px-5 py-3 font-medium hover:bg-neutral-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-accent/30; }
+  .badge { @apply inline-flex items-center rounded-full bg-brand-accentSoft/70 text-brand-text px-3 py-1 text-sm; }
+  .card { @apply bg-brand-surface rounded-xl shadow-soft border border-neutral-100; }
+}
+
+
