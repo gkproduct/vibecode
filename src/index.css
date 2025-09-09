@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-base-white text-base-dark font-sans antialiased;
+}
+
+.container-px {
+  @apply px-5 sm:px-8 lg:px-12;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center rounded-lg bg-accent-emerald px-5 py-3 text-base font-semibold text-white shadow-soft transition hover:bg-accent-green focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-emerald/40;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center rounded-lg border border-base-gray bg-white px-5 py-3 text-base font-semibold text-base-dark transition hover:border-accent-orange hover:text-accent-orange;
+}
+
+.section {
+  @apply container mx-auto container-px py-16 sm:py-20 lg:py-28;
+}
+
+.badge {
+  @apply inline-flex items-center gap-2 rounded-full bg-base-light px-3 py-1 text-sm font-medium text-base-dark;
+}
+
+
